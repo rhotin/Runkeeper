@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         raceList.add(new RaceModel("Tokyo-Hakone Ekiden 2020", "00:00:00", "capture8", 2020, 1, 0));
         raceList.add(new RaceModel("Virtual 10K Race", "00:00:00", "capture9", 2020, 1, 0));
         raceList.add(new RaceModel("Hakone Ekiden", "00:00:00", "capture10", 2020, 1, 0));
-        raceList.add(new RaceModel("Mizuno Singapore Ekiden 2015", "00:00:00", "capture11", 2020, 1, 0));
+        raceList.add(new RaceModel("Mizuno Singapore Ekiden 2015", "00:00:00", "capture11", 2015, 1, 0));
         raceList.add(new RaceModel("Virtual 5K Race", "00:00:00", "capture12", 2020, 1, 0));
 
         RecAdapter adapter = new RecAdapter(raceList, getPackageName());
