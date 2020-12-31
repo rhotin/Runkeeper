@@ -78,6 +78,7 @@ public class RecAdapter extends RecyclerView.Adapter<RecAdapter.RecViewHolder> {
 
         private TextView title;
         private TextView time;
+        private TextView elevation;
         private TextView year;
         private ImageView logo;
         private View subItem;
@@ -89,6 +90,7 @@ public class RecAdapter extends RecyclerView.Adapter<RecAdapter.RecViewHolder> {
 
             if (viewType == ITEM_VIEW_TYPE_ITEM) {
                 logo = itemView.findViewById(R.id.imageView);
+                elevation = itemView.findViewById(R.id.sub_item_elevation);
                 year = itemView.findViewById(R.id.sub_item_year);
                 subItem = itemView.findViewById(R.id.sub_item);
             }
@@ -113,6 +115,7 @@ public class RecAdapter extends RecyclerView.Adapter<RecAdapter.RecViewHolder> {
                         .override(200, 200)
                         .into(logo);
                 title.setText(movie.getTitle());
+                elevation.setText(movie.getMaxElevation() + " ft");
                 time.setText("Time: " + movie.getTime());
                 year.setText("Year: " + movie.getYear());
             }
